@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="topnav">
+    <a class="active" href="index.html">myTunes</a>
+    <a href="index.html">Overview</a>
+    <a href="index.html">Music</a>
+    <a href="index.html">Video</a>
+    <div class="righttopnav">
+      <a class="active" href="login.html">Log in</a>
+    </div>
+  </div>
+
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="register.css">
+  <script> function s() {
+      let pass = document.getElementById("pass").value;
+      let pass2 = document.getElementById("pass2").value;
+      var email = document.sign.email;
+      var phone = document.sign.phone;
+      var fullname = document.sign.fullname;
+      if (allLetters(fullname)) {
+        if (pass_validation(pass)) {
+
+          if (pass2_validation(pass, pass2)) {
+            if (mobile_validation(phone)) {
+              if (email_validation(email)) {
+                alert("signup successfull");
+                document.getElementById('sign').action = 'signup.php';
+
+              }
+
+            }
+          }
+        }
+      }
+
+    }
+
+
+    function pass_validation(pass) {
+
+      var p = pass.length;
+
+      if (p <= 7) {
+        alert("minimum length for password is 8");
+
+        return false;
+      }
+      else {
+        return true;
+      }
+
+    }
+    function pass2_validation(pass, pass2) {
+
+      if (pass2 == pass)
+        return true;
+      else {
+        alert("passwords should match");
+        return false;
+      }
+
+    }
+    function mobile_validation(mobile) {
+
+      var phoneno = /^\d{10}$/;
+      if ((mobile.value.match(phoneno))) {
+        return true;
+      }
+      else {
+        alert("Enter valid phone number");
+        return false;
+      }
+    }
+    function email_validation(email) {
+      var mail = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
+      if (email.value.match(mail)) {
+        return true;
+      }
+      else {
+        alert("Enter Valid Email Address");
+        email.focus();
+        return false;
+      }
+    }
+
+
+    function allLetters(name) {
+      var letters = /^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$/;
+      if (name.value.match(letters)) {
+        return true;
+      }
+      else {
+        alert("Enter only  Alphabets");
+        fname.focus();
+        return false;
+      }
+    }
+  </script>
+  </head>
+
+  <div class="center">
+    <h1>SIGN UP</h1>
+
+    <form id="sign" method="post" name="sign">
+      <div class="txt_field">
+        <input type="text" id="fullname" name="fullname" required>
+        <span></span>
+        <label>Full Name</label>
+      </div>
+
+      <div class="txt_field">
+        <input type="password" name="password" id="pass" required>
+        <span></span>
+        <label>Password</label>
+      </div>
+      <div class="txt_field">
+        <input type="Password" name="pass2" id="pass2" required>
+        <span></span>
+        <label>Confirm Password</label>
+      </div>
+      <div class="txt_field">
+        <input type="text" name="phone" id="phone" required>
+        <span></span>
+        <label>Mob No</label>
+      </div>
+      <div class="txt_field">
+        <input type="text" name="email" id="email" required>
+        <span></span>
+        <label>Email</label>
+      </div>
+      <input type="submit" value="Signup" onclick="return s()">
+
+    </form>
+  </div>
+
+</body>
+
+</html>

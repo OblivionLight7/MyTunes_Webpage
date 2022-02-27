@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.righttopnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.righttopnav a:hover {
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ddd;
+  color: black;
+}
+
+.righttopnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.main {
+  
+    background-image: url('OIP.jpg');  
+    background-size: cover;
+    height: 700px;
+    width: 800x;
+
+    
+  
+}
+
+.main h1 {
+  color: rgb(255, 255, 255);
+  font-family: verdana;
+  font-size: 300%;
+  text-align: center;
+}
+
+.main h2 {
+  color: rgb(255, 255, 255);
+  font-family: verdana;
+  font-size: 150%;
+  text-align: center;
+}
+
+.main p  {
+  color: rgb(255, 255, 255);
+  font-family: verdana;
+  font-size: 150%;
+  text-align: center;
+}
+
+.container h2 {
+  color: rgba(247, 245, 245, 0.945);
+  font-family: verdana;
+  font-size: 300%;
+  text-align: center;
+}
+.container h3 {
+  color: rgb(255, 255, 255);
+  font-family: verdana;
+  font-size: 150%;
+  text-align: center;
+}
+.container p {
+  color: rgb(255, 255, 255);
+  font-family: verdana;
+  font-size: 150%;
+  text-align: center;
+}
+
+.container {
+  background-image: url('Music.jpg');  
+  background-size: cover;
+  height: 1080px;
+  width: 1190x;
+}
+.container a {
+  background-color: #4CAF50;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px 650px;
+  cursor: pointer;
+}
+
+.container h4 {
+  color: rgb(255, 255, 255);
+  font-family: verdana;
+  font-size: 100%;
+  text-align: center;
+}
+
+.container2 {
+  background-image: white;  
+  background-size: cover;
+  height: 1080px;
+  width: 1190x;
+}
+
+.container2 h2 {
+  color: white;
+  font-family: verdana;
+  font-size: 300%;
+  text-align: center;
+}
+.container2 h3 {
+  color: white;
+  font-family: verdana;
+  font-size: 150%;
+  text-align: center;
+}
+.container2 p {
+  color: white;
+  font-family: verdana;
+  font-size: 150%;
+  text-align: center;
+}
+.container2 a {
+  background-color: #4CAF50;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px 650px;
+  cursor: pointer;
+}
+
+.container3 {
+  background-image: url('En.jpg');  
+  background-size: cover;
+  height: 520px;
+  width: 1080;
+}
+
+
+.container3 h3 {
+  color: rgb(255, 255, 255);
+  font-family: verdana;
+  font-size: 150%;
+  text-align: center;
+}
+.container3 p {
+  color: rgb(255, 255, 255);
+  font-family: verdana;
+  font-size: 150%;
+  text-align: center;
+}
+
+
